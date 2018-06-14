@@ -1,12 +1,15 @@
-## 环境说明
+## 鐜璇存槑
 - Windows 10 v1803
 - Docker Version 18.03.1-ce-win65 
 
-## 使用说明:
-- 打开命令行，切换到此目录
-- 运行命令: docker-compose up
-- 打开浏览器，访问http://localhost:8500
-- 完成
+## 浣跨敤璇存槑:
+- 鎵撳紑鍛戒护琛岋紝鍒囨崲鍒版鐩綍
+- 杩愯鍛戒护: 
+```cmd
+docker-compose up
+```
+- 鎵撳紑娴忚鍣紝璁块棶http://localhost:8500
+- 瀹屾垚
 
-## 其他
-原始文件参考：[docker-compose-cluster](https://github.com/hashicorp/consul/tree/master/demo/docker-compose-cluster)
+## 鍏朵粬
+鍘熷鏂囦欢鍙傝�冿細[docker-compose-cluster](https://github.com/hashicorp/consul/tree/master/demo/docker-compose-cluster)
