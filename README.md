@@ -9,6 +9,7 @@
 ## 相关开源项目
 - [Ocelot](https://github.com/ThreeMammals/Ocelot)
 - [Consul](https://github.com/hashicorp/consul)
+- [Winton.Extensions.Configuration.Consul](https://github.com/wintoncode/Winton.Extensions.Configuration.Consul)
 
 ## 项目说明
 - Nyw.ApiGateway：基于Ocelot构建的ApiGateway,配置从Consul获取
