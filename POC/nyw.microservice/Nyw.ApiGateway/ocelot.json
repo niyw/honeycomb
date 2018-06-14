@@ -18,10 +18,11 @@
       "ReRouteIsCaseSensitive": false,
       "ServiceName": null,
       "DownstreamScheme": "http",
+      /*Quality of Service*/
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 3,
-        "DurationOfBreak": 10,
-        "TimeoutValue": 5000
+        "DurationOfBreak": 5,
+        "TimeoutValue": 5000 /*∫¡√Î*/
       },
       "LoadBalancerOptions": {
         "Type": null,

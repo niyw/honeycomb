@@ -15,3 +15,12 @@
 - Nyw.ApiGateway：基于Ocelot构建的ApiGateway,配置从Consul获取
 - Nyw.Employee：测试项目，Consul作为配置源
 - Nyw.Vendor：测试项目，Consul作为配置源
+
+## 已验证功能
+- Ocelot:
+  1. Rounting 
+  1. Quality of Service
+  1. Rate Limiting
+- Consul
+  1. Key/Value
+  1. Dotnetcore Configuration Provider
