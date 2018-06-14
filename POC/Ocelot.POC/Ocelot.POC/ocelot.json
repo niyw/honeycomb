@@ -1,8 +1,0 @@
-﻿{
-  "GlobalConfiguration": {
-    "ServiceDiscoveryProvider": {
-      "Host": "localhost",
-      "Port": 9500
-    }
-  }
-}
