@@ -1,8 +1,9 @@
 ﻿{
   "GlobalConfiguration": {
-    //"ServiceDiscoveryProvider": {
-    //  "Host": "localhost",
-    //  "Port": 9500
-    //}
+    "ServiceDiscoveryProvider": {
+      "Host": "localhost",
+      "Port": 8500,
+      "ConfigurationKey": "Nyw.Oceolot"
+    }
   }
 }
