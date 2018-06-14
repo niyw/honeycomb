@@ -13,6 +13,7 @@ namespace Nyw.VendorService.Controllers {
             new VendorModel{ Id=2, Name="京东" },
             new VendorModel{ Id=3, Name="腾讯"}
         };
+        public ValuesController() { }
         // GET api/values
         [HttpGet]
         public IEnumerable<VendorModel> Get() {
@@ -37,7 +38,8 @@ namespace Nyw.VendorService.Controllers {
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id) {
+        public string Delete(int id) {
+            return $"delete vendor:{id} success";
         }
     }
 }

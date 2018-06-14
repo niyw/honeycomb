@@ -1,16 +1,50 @@
 ﻿{
   "ReRoutes": [
     {
-      "DownstreamPathTemplate": "/api/posts/{postId}",
-      "DownstreamScheme": "https",
+      "DownstreamPathTemplate": "/api/values/{id}",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 80
+          "Port": 8810
         }
       ],
-      "UpstreamPathTemplate": "/posts/{postId}",
-      "UpstreamHttpMethod": [ "Put", "Delete" ]
+      "UpstreamPathTemplate": "/vendor/{id}",
+      "UpstreamHttpMethod": [ "Get", "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "HttpHandlerOptions": {
+        "AllowAutoRedirect": false,
+        "UseCookieContainer": false,
+        "UseTracing": false,
+        "UseProxy": true
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8820
+        }
+      ],
+      "UpstreamPathTemplate": "/employee/{id}",
+      "UpstreamHttpMethod": [ "Get", "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      },
+      "HttpHandlerOptions": {
+        "AllowAutoRedirect": false,
+        "UseCookieContainer": false,
+        "UseTracing": false,
+        "UseProxy": true
+      }
     }
   ]
 }
