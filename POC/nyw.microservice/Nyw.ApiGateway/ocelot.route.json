@@ -16,6 +16,13 @@
         "DurationOfBreak": 10,
         "TimeoutValue": 5000
       },
+      "RateLimitOptions": {
+        "ClientWhitelist": [], /*the client in this array will not be affected by the rate limiting*/
+        "EnableRateLimiting": false,
+        "Period": "1s", /*This value specifies the period, such as 1s, 5m, 1h,1d and so on. */
+        "PeriodTimespan": 1.0, /* This value specifies that we can retry after a certain number of seconds*/
+        "Limit": 10 /*This value specifies the maximum number of requests that a client can make in a defined period*/
+      },
       "HttpHandlerOptions": {
         "AllowAutoRedirect": false,
         "UseCookieContainer": false,
