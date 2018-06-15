@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Nyw.AppExtensions;
 using Winton.Extensions.Configuration.Consul;
 
 namespace Nyw.EmployeeServices {
@@ -31,6 +32,15 @@ namespace Nyw.EmployeeServices {
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.RegisterConsulService(appLifetime, new ConsulServiceOptions {
+                Address = "localhost",
+                ConsulAddress = "localhost",
+                ConsulPort = 8500,
+                Port = Convert.ToInt32(Configuration["ServicePort"]),
+                Service = "employee"
+            });
+
             appLifetime.ApplicationStopping.Register(cancellationTokenSource.Cancel);
             app.UseMvc();
         }

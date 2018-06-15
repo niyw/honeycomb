@@ -5,6 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="NotUseServiceDiscovery_ocelot.route.json1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="NotUseServiceDiscovery_ocelot.route.json1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

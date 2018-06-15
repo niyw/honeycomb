@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Winton.Extensions.Configuration.Consul;
+using Nyw.AppExtensions;
 
 namespace Nyw.VendorService {
     public class Startup {
@@ -31,26 +32,35 @@ namespace Nyw.VendorService {
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.RegisterConsulService(appLifetime, new ConsulServiceOptions {
+                Address = "localhost",
+                ConsulAddress = "localhost",
+                ConsulPort = 8500,
+                Port = Convert.ToInt32(Configuration["ServicePort"]),
+                Service = "vendor"
+            });
+
             appLifetime.ApplicationStopping.Register(cancellationTokenSource.Cancel);
             app.UseMvc();
         }
-    private static CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
-    public static void ConfigureAppConfiguration(WebHostBuilderContext hostingContext, IConfigurationBuilder builder) {
-        var env = hostingContext.HostingEnvironment;
-        builder
-            .AddConsul($"{env.ApplicationName}.{env.EnvironmentName}",
-                cancellationTokenSource.Token,
-                options => {
-                    options.ConsulConfigurationOptions =
-                        cco => {
-                            cco.Address = new Uri("http://localhost:8500");
-                            cco.Datacenter = "dc1";
-                        };
-                    options.Optional = true;
-                    options.ReloadOnChange = true;
-                    options.OnLoadException = exceptionContext => { exceptionContext.Ignore = true; };
-                })
-            .AddEnvironmentVariables();
-    }
+        private static CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+        public static void ConfigureAppConfiguration(WebHostBuilderContext hostingContext, IConfigurationBuilder builder) {
+            var env = hostingContext.HostingEnvironment;
+            builder
+                .AddConsul($"{env.ApplicationName}.{env.EnvironmentName}",
+                    cancellationTokenSource.Token,
+                    options => {
+                        options.ConsulConfigurationOptions =
+                            cco => {
+                                cco.Address = new Uri("http://localhost:8500");
+                                cco.Datacenter = "dc1";
+                            };
+                        options.Optional = true;
+                        options.ReloadOnChange = true;
+                        options.OnLoadException = exceptionContext => { exceptionContext.Ignore = true; };
+                    })
+                .AddEnvironmentVariables();
+        }
     }
 }

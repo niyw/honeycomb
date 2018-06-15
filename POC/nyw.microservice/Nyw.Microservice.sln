@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nyw.Employee", "Nyw.Employe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{320A36EE-8052-433D-B007-9DE3A2C439BF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{90E9C700-3C64-4F15-9406-F31BAC440D8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nyw.AppExtensions", "Nyw.AppExtensions\Nyw.AppExtensions.csproj", "{F07B5EB9-5FC0-4969-8F69-3B19186EC9D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,10 @@ Global
 		{CC65BB47-20FD-4B4F-8B2E-39438381084B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC65BB47-20FD-4B4F-8B2E-39438381084B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC65BB47-20FD-4B4F-8B2E-39438381084B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F07B5EB9-5FC0-4969-8F69-3B19186EC9D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F07B5EB9-5FC0-4969-8F69-3B19186EC9D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F07B5EB9-5FC0-4969-8F69-3B19186EC9D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F07B5EB9-5FC0-4969-8F69-3B19186EC9D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4E0CBE39-3A13-421D-A605-56C46610883B} = {320A36EE-8052-433D-B007-9DE3A2C439BF}
 		{CC65BB47-20FD-4B4F-8B2E-39438381084B} = {320A36EE-8052-433D-B007-9DE3A2C439BF}
+		{F07B5EB9-5FC0-4969-8F69-3B19186EC9D0} = {90E9C700-3C64-4F15-9406-F31BAC440D8B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D3749782-165A-47C9-A8BA-C007F17F3AD9}

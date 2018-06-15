@@ -3,18 +3,20 @@
     {
       "DownstreamPathTemplate": "/api/values/{id}",
       "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 8810
-        }
-      ],
+      "ServiceName": "vendor",
+      "UseServiceDiscovery": true,
+      "LoadBalancerOptions": {
+        "Type": "LeastConnection",
+        "Key": null,
+        "Expiry": 0
+      },
       "UpstreamPathTemplate": "/vendor/{id}",
       "UpstreamHttpMethod": [ "Get", "Delete" ],
+      /*Quality of Service*/
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 3,
         "DurationOfBreak": 10,
-        "TimeoutValue": 5000
+        "TimeoutValue": 5000 /*毫秒*/
       },
       "RateLimitOptions": {
         "ClientWhitelist": [], /*the client in this array will not be affected by the rate limiting*/
@@ -33,12 +35,13 @@
     {
       "DownstreamPathTemplate": "/api/values/{id}",
       "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 8820
-        }
-      ],
+      "ServiceName": "employee",
+      "UseServiceDiscovery": true,
+      "LoadBalancerOptions": {
+        "Type": "LeastConnection",
+        "Key": null,
+        "Expiry": 0
+      },
       "UpstreamPathTemplate": "/employee/{id}",
       "UpstreamHttpMethod": [ "Get", "Delete" ],
       "QoSOptions": {

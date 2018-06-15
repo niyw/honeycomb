@@ -16,25 +16,24 @@
         "Region": null
       },
       "ReRouteIsCaseSensitive": false,
-      "ServiceName": null,
+      "ServiceName": "vendor",
       "DownstreamScheme": "http",
-      /*Quality of Service*/
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 3,
-        "DurationOfBreak": 5,
-        "TimeoutValue": 5000 /*∫¡√Î*/
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
       },
       "LoadBalancerOptions": {
-        "Type": null,
+        "Type": "LeastConnection",
         "Key": null,
         "Expiry": 0
       },
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRateLimiting": false,
-        "Period": null,
-        "PeriodTimespan": 0.0,
-        "Limit": 0
+        "Period": "1s",
+        "PeriodTimespan": 1.0,
+        "Limit": 10
       },
       "AuthenticationOptions": {
         "AuthenticationProviderKey": null,
@@ -46,13 +45,8 @@
         "UseTracing": false,
         "UseProxy": true
       },
-      "UseServiceDiscovery": false,
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 8810
-        }
-      ],
+      "UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [],
       "UpstreamHost": null,
       "Key": null,
       "DelegatingHandlers": [],
@@ -76,7 +70,7 @@
         "Region": null
       },
       "ReRouteIsCaseSensitive": false,
-      "ServiceName": null,
+      "ServiceName": "employee",
       "DownstreamScheme": "http",
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 3,
@@ -84,7 +78,7 @@
         "TimeoutValue": 5000
       },
       "LoadBalancerOptions": {
-        "Type": null,
+        "Type": "LeastConnection",
         "Key": null,
         "Expiry": 0
       },
@@ -105,13 +99,8 @@
         "UseTracing": false,
         "UseProxy": true
       },
-      "UseServiceDiscovery": false,
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 8820
-        }
-      ],
+      "UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [],
       "UpstreamHost": null,
       "Key": null,
       "DelegatingHandlers": [],
@@ -133,7 +122,7 @@
     },
     "RateLimitOptions": {
       "ClientIdHeader": "ClientId",
-      "QuotaExceededMessage": null,
+      "QuotaExceededMessage": "Exceeded access quota limit",
       "RateLimitCounterPrefix": "ocelot",
       "DisableRateLimitHeaders": false,
       "HttpStatusCode": 429

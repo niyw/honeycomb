@@ -1,0 +1,58 @@
+﻿//{
+//  "ReRoutes": [
+//    {
+//      "DownstreamPathTemplate": "/api/values/{id}",
+//      "DownstreamScheme": "http",
+//      "DownstreamHostAndPorts": [
+//        {
+//          "Host": "localhost",
+//          "Port": 8810
+//        }
+//      ],
+//      "UpstreamPathTemplate": "/vendor/{id}",
+//      "UpstreamHttpMethod": [ "Get", "Delete" ],
+//      /*Quality of Service*/
+//      "QoSOptions": {
+//        "ExceptionsAllowedBeforeBreaking": 3,
+//        "DurationOfBreak": 10,
+//        "TimeoutValue": 5000 /*毫秒*/
+//      },
+//      "RateLimitOptions": {
+//        "ClientWhitelist": [], /*the client in this array will not be affected by the rate limiting*/
+//        "EnableRateLimiting": false,
+//        "Period": "1s", /*This value specifies the period, such as 1s, 5m, 1h,1d and so on. */
+//        "PeriodTimespan": 1.0, /* This value specifies that we can retry after a certain number of seconds*/
+//        "Limit": 10 /*This value specifies the maximum number of requests that a client can make in a defined period*/
+//      },
+//      "HttpHandlerOptions": {
+//        "AllowAutoRedirect": false,
+//        "UseCookieContainer": false,
+//        "UseTracing": false,
+//        "UseProxy": true
+//      }
+//    },
+//    {
+//      "DownstreamPathTemplate": "/api/values/{id}",
+//      "DownstreamScheme": "http",
+//      "DownstreamHostAndPorts": [
+//        {
+//          "Host": "localhost",
+//          "Port": 8820
+//        }
+//      ],
+//      "UpstreamPathTemplate": "/employee/{id}",
+//      "UpstreamHttpMethod": [ "Get", "Delete" ],
+//      "QoSOptions": {
+//        "ExceptionsAllowedBeforeBreaking": 3,
+//        "DurationOfBreak": 10,
+//        "TimeoutValue": 5000
+//      },
+//      "HttpHandlerOptions": {
+//        "AllowAutoRedirect": false,
+//        "UseCookieContainer": false,
+//        "UseTracing": false,
+//        "UseProxy": true
+//      }
+//    }
+//  ]
+//}
