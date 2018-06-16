@@ -5,15 +5,15 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nyw.ApiGateway", "Nyw.ApiGateway\Nyw.ApiGateway.csproj", "{3DF9D910-5A2D-4038-91E8-E136C56E6918}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nyw.Vendor", "Nyw.Vendor\Nyw.Vendor.csproj", "{4E0CBE39-3A13-421D-A605-56C46610883B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nyw.Vendor", "Nyw.Vendor\Nyw.Vendor.csproj", "{4E0CBE39-3A13-421D-A605-56C46610883B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nyw.Employee", "Nyw.Employee\Nyw.Employee.csproj", "{CC65BB47-20FD-4B4F-8B2E-39438381084B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nyw.Employee", "Nyw.Employee\Nyw.Employee.csproj", "{CC65BB47-20FD-4B4F-8B2E-39438381084B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{320A36EE-8052-433D-B007-9DE3A2C439BF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{90E9C700-3C64-4F15-9406-F31BAC440D8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nyw.AppExtensions", "Nyw.AppExtensions\Nyw.AppExtensions.csproj", "{F07B5EB9-5FC0-4969-8F69-3B19186EC9D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nyw.AppExtensions", "Nyw.AppExtensions\Nyw.AppExtensions.csproj", "{F07B5EB9-5FC0-4969-8F69-3B19186EC9D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
