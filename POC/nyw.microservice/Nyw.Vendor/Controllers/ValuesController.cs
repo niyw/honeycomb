@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Nyw.VendorService.Models;
 
 namespace Nyw.VendorService.Controllers {
@@ -13,17 +14,23 @@ namespace Nyw.VendorService.Controllers {
             new VendorModel{ Id=2, Name="京东" },
             new VendorModel{ Id=3, Name="腾讯"}
         };
-        public ValuesController() { }
+        private ILogger log = null;
+        public ValuesController(ILogger<ValuesController> logger) {
+            this.log = logger;
+        }
         // GET api/values
         [HttpGet]
         public IEnumerable<VendorModel> Get() {
+            
             return vendors;
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public VendorModel Get(int id) {
-            return vendors.Where(v => v.Id == id).FirstOrDefault();
+            var vendor = vendors.Where(v => v.Id == id).FirstOrDefault();
+            log.LogInformation("Read {@Vendor}",vendor);
+            return vendor;
         }
 
         // POST api/values
