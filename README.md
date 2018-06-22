@@ -52,3 +52,12 @@
 - IdentityServer:
 	1. IdentityServer4.EntityFramework
 	1. Customize User Model
+- Serilog:
+	1. ASP.NET Core 2.x log using Serilog
+	1. Output log to console
+	1. Output log to file
+	1. Output log to Elasticsearch
+- ELK:
+	1. ELK Docker Compose build quickly
+	1. Write log to Elk
+	1. Basicly create index and search
