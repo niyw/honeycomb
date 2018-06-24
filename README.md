@@ -22,6 +22,8 @@
 	- [elasticsearch](https://github.com/elastic/elasticsearch)
 	- [logstash](https://github.com/elastic/logstash)
 	- [kibana](https://github.com/elastic/kibana)
+- [Quartz.NET](https://github.com/quartznet/quartznet)
+	- [Documents](https://www.quartz-scheduler.net/documentation/index.html)
 
 ## 项目说明
 - Nyw.ApiGateway：基于Ocelot构建的ApiGateway,配置从Consul获取
