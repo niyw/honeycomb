@@ -37,6 +37,10 @@
 - Nyw.IdentityServer：认证服务项目
 	- 使用IdentityServer4.EntityFramework保存数据到数据库中
 	- 使用自定义用户模型
+- Nyw.ExchangeRateTask：定期查询汇率任务(计划任务)
+	- 控制台程序使用Serilog记录日志
+	- 使用Quartz.NET构建计划任务
+	- Quartz.NET和Serilog协同工作
 
 ## 已验证功能
 - Ocelot:
@@ -61,3 +65,7 @@
 	1. ELK Docker Compose build quickly
 	1. Write log to Elk
 	1. Basicly create index and search
+- Quartz.NET:
+	1. Simple Schedule with Repeat Count or Forever
+	1. Work with Serilog
+	1. Console host
