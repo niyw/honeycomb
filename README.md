@@ -24,6 +24,8 @@
 	- [kibana](https://github.com/elastic/kibana)
 - [Quartz.NET](https://github.com/quartznet/quartznet)
 	- [Documents](https://www.quartz-scheduler.net/documentation/index.html)
+- [skywalking](https://github.com/apache/incubator-skywalking)
+	- [Client:dotnetcore](https://github.com/OpenSkywalking/skywalking-netcore)
 
 ## 项目说明
 - Nyw.ApiGateway：基于Ocelot构建的ApiGateway,配置从Consul获取
@@ -43,6 +45,8 @@
 	- 控制台程序使用Serilog记录日志
 	- 使用Quartz.NET构建计划任务
 	- Quartz.NET和Serilog协同工作
+- Nyw.Portal:定义门户，计划用于调用API
+	- 添加skywalking netcore
 
 ## 已验证功能
 - Ocelot:
@@ -71,3 +75,5 @@
 	1. Simple Schedule with Repeat Count or Forever
 	1. Work with Serilog
 	1. Console host
+- Skywalking
+	1. Basicly .net core apm and application topology map
