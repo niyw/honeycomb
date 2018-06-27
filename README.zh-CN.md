@@ -1,12 +1,12 @@
 # honeycomb
 
-## Requirements
+## 环境说明
 - Visual Studio 2017
 - .NET Core 2.0
 - Windows 10 v1803
 - Docker Version 18.03.1-ce-win65 
 
-## Open Source Projects
+## 相关开源项目
 - [Ocelot](https://github.com/ThreeMammals/Ocelot)
 - [Consul](https://github.com/hashicorp/consul)
 - [Winton.Extensions.Configuration.Consul](https://github.com/wintoncode/Winton.Extensions.Configuration.Consul)
@@ -27,29 +27,28 @@
 - [skywalking](https://github.com/apache/incubator-skywalking)
 	- [Client:dotnetcore](https://github.com/OpenSkywalking/skywalking-netcore)
 
-## Projects Illustrate
-- Nyw.ApiGateway：
-	- ApiGatewat service, base **Ocelot** and load configuration from **Consul**
-- Nyw.Employee：Web API Test Project
-	- Consul as configuration source provider
-	- Register itself to consul as a service when lunch
-- Nyw.Vendor：Web API Test Project
-	- Consul as configuration source provider
-	- Register itself to consul as a service when lunch
-	- Using serilog,write log to Console, File, Elasticsearch
-- Nyw.AppExtensions：Class Library
-	- .et core middlerware, Consul extension，the app could registry itself to Consul when lunch
-- Nyw.IdentityServer：Web API Project for IdentityServer
-	- Persisent data to sqlserver using IdentityServer4.EntityFramework
-	- Using customize user model
-- Nyw.ExchangeRateTask：Console app as Schedule Task, mock to query Exchange Rage Schdulely
-	- Use serilog to output log
-	- Build simple schedule task using Quartz.NET
-	- Quartz.NET work with Serilog
-- Nyw.Portal:Customzie USer Protal, plan to consum API
-	- add skywalking netcore
+## 项目说明
+- Nyw.ApiGateway：基于Ocelot构建的ApiGateway,配置从Consul获取
+- Nyw.Employee：测试项目
+	- Consul作为配置源
+	- 启动时向Consul注册自己
+- Nyw.Vendor：测试项目
+	- Consul作为配置源
+	- 启动时向Consul注册自己
+	- 使用serilog,日志输出到Console, File, Elasticsearch
+- Nyw.AppExtensions：扩展项目
+	- Consul扩展，实现项目启动时自动向Consul注册服务
+- Nyw.IdentityServer：认证服务项目
+	- 使用IdentityServer4.EntityFramework保存数据到数据库中
+	- 使用自定义用户模型
+- Nyw.ExchangeRateTask：定期查询汇率任务(计划任务)
+	- 控制台程序使用Serilog记录日志
+	- 使用Quartz.NET构建计划任务
+	- Quartz.NET和Serilog协同工作
+- Nyw.Portal:定义门户，计划用于调用API
+	- 添加skywalking netcore
 
-## Proofed Functions
+## 已验证功能
 - Ocelot:
 	1. Rounting 
 	1. Quality of Service
