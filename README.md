@@ -9,9 +9,9 @@
 ## Open Source Projects
 - [Ocelot](https://github.com/ThreeMammals/Ocelot)
 - [Consul](https://github.com/hashicorp/consul)
-- [Winton.Extensions.Configuration.Consul](https://github.com/wintoncode/Winton.Extensions.Configuration.Consul)
+	- [Winton.Extensions.Configuration.Consul](https://github.com/wintoncode/Winton.Extensions.Configuration.Consul)
 - [IdentityServer4](https://github.com/IdentityServer/IdentityServer4)
-- [IdentityServer4.EntityFramework](https://github.com/IdentityServer/IdentityServer4.EntityFramework)
+	- [IdentityServer4.EntityFramework](https://github.com/IdentityServer/IdentityServer4.EntityFramework)
 - [Serilog](https://github.com/serilog)
 	- [Serilog.Serilog](https://github.com/serilog/serilog)
 	- [Serilog-aspnetcore](https://github.com/serilog/serilog-aspnetcore)

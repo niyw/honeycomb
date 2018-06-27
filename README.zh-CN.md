@@ -1,4 +1,4 @@
-# honeycomb
+# 蜂巢
 
 ## 环境说明
 - Visual Studio 2017
@@ -9,9 +9,9 @@
 ## 相关开源项目
 - [Ocelot](https://github.com/ThreeMammals/Ocelot)
 - [Consul](https://github.com/hashicorp/consul)
-- [Winton.Extensions.Configuration.Consul](https://github.com/wintoncode/Winton.Extensions.Configuration.Consul)
+	- [Winton.Extensions.Configuration.Consul](https://github.com/wintoncode/Winton.Extensions.Configuration.Consul)
 - [IdentityServer4](https://github.com/IdentityServer/IdentityServer4)
-- [IdentityServer4.EntityFramework](https://github.com/IdentityServer/IdentityServer4.EntityFramework)
+	- [IdentityServer4.EntityFramework](https://github.com/IdentityServer/IdentityServer4.EntityFramework)
 - [Serilog](https://github.com/serilog)
 	- [Serilog.Serilog](https://github.com/serilog/serilog)
 	- [Serilog-aspnetcore](https://github.com/serilog/serilog-aspnetcore)
@@ -50,30 +50,30 @@
 
 ## 已验证功能
 - Ocelot:
-	1. Rounting 
-	1. Quality of Service
-	1. Rate Limiting
-	1. Service Discovery, work with consul
+	1. 路由 
+	1. 服务质量
+	1. 使用限制
+	1. 服务发现,使用consul
 - Consul
-	1. Key/Value
-	1. Dotnetcore Configuration Provider
-	1. Service Registry
-	1. Health Check
+	1. K/V存储
+	1. Dotnetcore 配置提供程序
+	1. 服务注册
+	1. 健康检查
 - IdentityServer:
-	1. IdentityServer4.EntityFramework
-	1. Customize User Model
+	1. 使用IdentityServer4.EntityFramework存储数据到数据库
+	1. 自定义用户模型
 - Serilog:
-	1. ASP.NET Core 2.x log using Serilog
-	1. Output log to console
-	1. Output log to file
-	1. Output log to Elasticsearch
+	1. ASP.NET Core 2.x使用Serilog记录日志
+	1. 输出日志到控制台
+	1. 输出日志到文件
+	1. 输出日志到Elasticsearch
 - ELK:
-	1. ELK Docker Compose build quickly
-	1. Write log to Elk
-	1. Basicly create index and search
+	1. 使用ELK Docker Compose快速构建环境
+	1. 输出日志到Elk
+	1. 创建基本索引和查询
 - Quartz.NET:
-	1. Simple Schedule with Repeat Count or Forever
-	1. Work with Serilog
-	1. Console host
+	1. 构建简单的计划任务，重复有限次数和无限次重复
+	1. 和Serilog协同工作
+	1. 使用控制台运行
 - Skywalking
-	1. Basicly .net core apm and application topology map
+	1. ASP.NET Core 的APM和应用程序拓扑图
