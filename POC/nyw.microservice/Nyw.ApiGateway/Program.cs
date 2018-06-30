@@ -13,24 +13,18 @@ using Ocelot.DependencyInjection;
 namespace Ocelot.POC {
     public class Program {
         public static void Main(string[] args) {
-            BuildWebHost(args).Run();
+            CreateWebHostBuilder(args).Build().Run();
         }
-
-        public static IWebHost BuildWebHost(string[] args) =>
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
             .UseContentRoot(Directory.GetCurrentDirectory())
             .ConfigureAppConfiguration((hostingContext, config) => {
                 config.SetBasePath(hostingContext.HostingEnvironment.ContentRootPath)
                     .AddJsonFile("appsettings.json", true, true)
                     .AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", true, true)
-                    //.AddJsonFile("ocelot.json")
                     .AddOcelot()
                     .AddEnvironmentVariables();
             })
-            .ConfigureLogging((hostingContext, logging) => {
-                //add your logging
-            })
-            .UseStartup<Startup>()
-            .Build();
+            .UseStartup<Startup>();
     }
 }
