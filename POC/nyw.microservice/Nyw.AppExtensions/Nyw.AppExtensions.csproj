@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Consul" Version="0.7.2.4" />
+    <PackageReference Include="Consul" Version="0.7.2.5" />
   </ItemGroup>
 
   <ItemGroup>

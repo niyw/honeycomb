@@ -32,7 +32,7 @@ namespace Nyw.VendorService {
 
             try {
                 Log.Information("Starting web host");
-                BuildWebHost(args).Run();
+                CreateWebHostBuilder(args).Build().Run();
             }
             catch (Exception ex) {
                 Log.Fatal(ex, "Host terminated unexpectedly");
@@ -42,11 +42,10 @@ namespace Nyw.VendorService {
             }
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
             .ConfigureAppConfiguration(Startup.ConfigureAppConfiguration)
             .UseStartup<Startup>()
-            .UseSerilog()
-            .Build();
+            .UseSerilog();
     }
 }
