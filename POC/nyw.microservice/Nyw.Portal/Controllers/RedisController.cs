@@ -9,8 +9,9 @@ using StackExchange.Redis;
 namespace Nyw.Portal.Controllers {
     public class RedisController : Controller {
         public IActionResult Index() {
-            var cfg = ConfigurationOptions.Parse("localhost");
-            cfg.Password = "P2ssw0rd";
+            var cfg = ConfigurationOptions.Parse("localhost:6379");
+            //cfg.Password = "P2ssw0rd";
+           
             ConnectionMultiplexer redis = ConnectionMultiplexer.Connect(cfg);
             IDatabase db = redis.GetDatabase();
 
