@@ -26,6 +26,8 @@
 	- [Documents](https://www.quartz-scheduler.net/documentation/index.html)
 - [skywalking](https://github.com/apache/incubator-skywalking)
 	- [Client:dotnetcore](https://github.com/OpenSkywalking/skywalking-netcore)
+- [Redis](https://github.com/antirez/redis)
+	- [StackExchange.Redis](https://github.com/StackExchange/StackExchange.Redis/)
 
 ## 项目说明
 - Nyw.ApiGateway：基于Ocelot构建的ApiGateway,配置从Consul获取
@@ -47,6 +49,7 @@
 	- Quartz.NET和Serilog协同工作
 - Nyw.Portal:定义门户，计划用于调用API
 	- 添加skywalking netcore
+	- 添加Redis缓存
 
 ## 已验证功能
 - Ocelot:
@@ -77,3 +80,5 @@
 	1. 使用控制台运行
 - Skywalking
 	1. ASP.NET Core 的APM和应用程序拓扑图
+- Redis
+	1. 基本操作：连接，添加字符串，读取字符串

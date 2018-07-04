@@ -26,6 +26,8 @@
 	- [Documents](https://www.quartz-scheduler.net/documentation/index.html)
 - [skywalking](https://github.com/apache/incubator-skywalking)
 	- [Client:dotnetcore](https://github.com/OpenSkywalking/skywalking-netcore)
+- [Redis](https://github.com/antirez/redis)
+	- [StackExchange.Redis](https://github.com/StackExchange/StackExchange.Redis/)
 
 ## Projects Illustrate
 - Nyw.ApiGateway：
@@ -48,6 +50,7 @@
 	- Quartz.NET work with Serilog
 - Nyw.Portal:Customzie USer Protal, plan to consum API
 	- add skywalking netcore
+	- add redis cache
 
 ## Proofed Functions
 - Ocelot:
@@ -78,3 +81,5 @@
 	1. Console host
 - Skywalking
 	1. Basicly .net core apm and application topology map
+- Redis
+	1. Basic Usage:connect, add string, read string

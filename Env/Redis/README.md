@@ -13,4 +13,5 @@ docker-compose up
 
 
 ## 其他
-- 暂无
+- docker pull redis:4
+- 官方镜像默认无法从外部连接，所以才使用docker-compose
