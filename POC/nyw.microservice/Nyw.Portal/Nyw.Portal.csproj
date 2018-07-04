@@ -6,7 +6,9 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
     <PackageReference Include="SkyWalking.AspNetCore" Version="0.3.0" />
+    <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
   </ItemGroup>
 
 </Project>
