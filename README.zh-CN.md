@@ -1,4 +1,4 @@
-[英文](readme.md) | 中文
+[英文](README.md) | 中文
 # 蜂巢
 
 ## 环境说明
@@ -11,7 +11,7 @@
 - [Ocelot](https://github.com/ThreeMammals/Ocelot)
 - [Consul](https://github.com/hashicorp/consul)
 	- [Winton.Extensions.Configuration.Consul](https://github.com/wintoncode/Winton.Extensions.Configuration.Consul)
-    - [安装](/env/consul/readme.md)
+    - [安装](/Env/Consul/README.md)
 - [IdentityServer4](https://github.com/IdentityServer/IdentityServer4)
 	- [IdentityServer4.EntityFramework](https://github.com/IdentityServer/IdentityServer4.EntityFramework)
 - [Serilog](https://github.com/serilog)
@@ -24,16 +24,16 @@
 	- [elasticsearch](https://github.com/elastic/elasticsearch)
 	- [logstash](https://github.com/elastic/logstash)
 	- [kibana](https://github.com/elastic/kibana)
-    - [安装](/env/elk/readme.md)
+    - [安装](/Env/ELK/README.md)
 - [Quartz.NET](https://github.com/quartznet/quartznet)
 	- [Documents](https://www.quartz-scheduler.net/documentation/index.html)
 - [skywalking](https://github.com/apache/incubator-skywalking)
 	- [Client:dotnetcore](https://github.com/OpenSkywalking/skywalking-netcore)
 - [Redis](https://github.com/antirez/redis)
 	- [StackExchange.Redis](https://github.com/StackExchange/StackExchange.Redis/)
-    - [安装](/env/redis/readme.md)
-- [Sonarqube](/devops/sonarqube/readme.md)
-- [Jenkins](/devops/jenkins/readme.md)
+    - [安装](/Env/Redis/README.md)
+- [Sonarqube](/DevOps/Sonarqube/README.md)
+- [Jenkins](/DevOps/Jenkins/README.md)
 
 ## 项目说明
 - Nyw.ApiGateway：基于Ocelot构建的ApiGateway,配置从Consul获取
