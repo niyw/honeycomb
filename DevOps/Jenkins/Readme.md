@@ -1,5 +1,5 @@
 ## 本文目的
-利用docker快速搭建用于测试目的的Jenkis环境。
+利用docker快速搭建用于测试目的的Jenkins环境。
 
 ## 环境说明
 - Windows 10 v1803
@@ -29,6 +29,6 @@ docker logs jenkins-blueocean
 
 ![1](1.png)
 
-- 启动浏览器，访问http://localhost:8080，首次访问jenkins会遇到如下界面，需要解锁访问，密码为上步中获取的密码；
+- 启动浏览器，访问http://localhost:8080 ，首次访问jenkins会遇到如下界面，需要解锁访问，密码为上步中获取的密码；
 ![2](2.png)
 - Jenkins环境已准备，即可开始使用
