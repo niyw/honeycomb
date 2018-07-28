@@ -1,4 +1,4 @@
-英文 | [中文](readme.zh-cn.md)
+英文 | [中文](README.zh-CN.md)
 # honeycomb
 
 ## Requirements
