@@ -3,7 +3,7 @@
 
 ## Requirements
 - Visual Studio 2017
-- .NET Core 2.0
+- .NET Core 2.0/2.1
 - Windows 10 v1803
 - Docker Version 18.03.1-ce-win65 
 
