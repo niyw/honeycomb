@@ -64,6 +64,8 @@
 	1. Quality of Service
 	1. Rate Limiting
 	1. Service Discovery, work with consul
+    1. Add ApiGateway Admin API craft
+    1. Add nlog support;
 - Consul
 	1. Key/Value
 	1. Dotnetcore Configuration Provider

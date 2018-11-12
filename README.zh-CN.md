@@ -63,6 +63,8 @@
 	1. 服务质量
 	1. 使用限制
 	1. 服务发现,使用consul
+    1. 添加网关管理API框架
+    1. 添加Nlog支持
 - Consul
 	1. K/V存储
 	1. Dotnetcore 配置提供程序
