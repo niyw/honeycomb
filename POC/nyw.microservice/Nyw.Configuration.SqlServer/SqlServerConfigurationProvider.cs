@@ -3,15 +3,13 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Nyw.Configuration.SqlServer {
     public class SqlServerConfigurationProvider : ConfigurationProvider {
+        private Action<DbContextOptionsBuilder> OptionsAction { get; }
         public SqlServerConfigurationProvider(Action<DbContextOptionsBuilder> optionsAction) {
             OptionsAction = optionsAction;
         }
-
-        Action<DbContextOptionsBuilder> OptionsAction { get; }
 
         // Load config data from EF DB.
         public override void Load() {
