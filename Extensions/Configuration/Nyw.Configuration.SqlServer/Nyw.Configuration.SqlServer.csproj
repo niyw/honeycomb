@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Ni Yanwei</Authors>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>How to use: https://github.com/niyw/honeycomb/tree/master/Extensions/Configuration</Description>
+    <RepositoryUrl>https://github.com/niyw/honeycomb/tree/master/Extensions/Configuration</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/niyw/honeycomb/tree/master/Extensions/Configuration</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
