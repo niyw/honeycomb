@@ -18,24 +18,10 @@ namespace Nyw.Configuration.SqlServer {
             using (var dbContext = new AppConfigDbContext(builder.Options)) {
                 dbContext.Database.EnsureCreated();
                 Data = !dbContext.KeyValues.Any()
-                    ? CreateAndSaveDefaultValues(dbContext)
+                    ? new Dictionary<string, string>()
                     : dbContext.KeyValues.ToDictionary(c => c.Id, c => c.Value);
             }
         }
-
-        private static IDictionary<string, string> CreateAndSaveDefaultValues(AppConfigDbContext dbContext) {
-            var configValues = new Dictionary<string, string>{};
-
-            dbContext.KeyValues.AddRange(configValues
-                .Select(kvp => new AppKeyValue {
-                    Id = kvp.Key,
-                    Value = kvp.Value
-                })
-                .ToArray());
-
-            dbContext.SaveChanges();
-
-            return configValues;
-        }
+        
     }
 }
