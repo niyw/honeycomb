@@ -57,6 +57,8 @@
 - Nyw.Portal:Customzie USer Protal, plan to consum API
 	- add skywalking netcore
 	- add redis cache
+- Nyw.Configuration.SqlServer: IConfiguration SQL Server Provider Middlerware
+    - Use SQL Server as IConfigguration Provider, it can load appsettings from sqlserver now
 
 ## Proofed Functions
 - Ocelot:

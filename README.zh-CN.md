@@ -56,6 +56,8 @@
 - Nyw.Portal:定义门户，计划用于调用API
 	- 添加skywalking netcore
 	- 添加Redis缓存
+- Nyw.Configuration.SqlServer: 数据库配置提供程序中间件
+    - 将SQL Server作为IConfiguration的配置提供程序，能够从数据库读取配置
 
 ## 已验证功能
 - Ocelot:
